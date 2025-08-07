@@ -63,9 +63,9 @@ module.export = function(config)
   };
 }
 ```
-Save and launch server an CLI. Don't forget to write a command in CLI system.resetAllData() so you can place your spawn on map.
+Save and launch server and CLI. Don't forget to write a command in CLI system.resetAllData().
 
-After restart place a spawn and write this command in CLI: 
+After restart write this command in CLI: 
 ```js
 storage.db['rooms.objects'].insert({type: 'structureName', room: yourRoomName, x: 20, y: 20});
 ```
