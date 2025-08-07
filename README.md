@@ -44,7 +44,7 @@ module.export = function(config)
 {
 }
 ```
-To make our structure and make it visible you need first upload your sprite on internet an then paste url to it in
+To make our structure and make it visible you need to upload your sprite on internet an then paste url to it in
 ```js
 const assetsUrl = 'your file url here';
 //if you uploaded file on hithub the link must be like this https://raw.githubusercontent.com/YourNickname/RepositoryName/refs/heads/main/
