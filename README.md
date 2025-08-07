@@ -41,7 +41,7 @@ In index.js you write your code.
 module.export = function(config)
 {
   const assetsUrl = 'your file url here';
-  //To make our structure and make it visible you need to upload your sprite on internet an then paste url to it in
+  //To make our structure and make it visible you need to upload your sprite on internet an then paste url to it in const value
   //if you uploaded file on hithub the link must be like this https://raw.githubusercontent.com/YourNickname/RepositoryName/refs/heads/main/
   config.backend.renderer.resources['your_texture'] = `${assetsUrl}filename.png`;
   config.backend.renderer.metadata['structureName'] = {
