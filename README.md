@@ -1,7 +1,7 @@
 # Introduction
 So you want to make a custom structures in Screeps. For that you will need to set up a private server but not the official one. It is impossible to test your mod on official private server.
 # Setting up private server
-First we will need to install [Jomik's](https://github.com/Jomik/screeps-server) server. Then install [Docker desktop](https://docs.docker.com/desktop/setup/install/windows-install). Unzip installed server in somewhere you want. In Screeps-server folder rename file ".env.sample" to ".env". Now you need your [steam API key](https://steamcommunity.com/dev/apikey). When you get it in .env file paste it and save.
+Install [Jomik's](https://github.com/Jomik/screeps-server) server. Then install [Docker desktop](https://docs.docker.com/desktop/setup/install/windows-install).
 
 To start the server launch Docker desktop. In server folder right click and open the Terminal. Past this command: docker compose up -d. To make sure server is running open Docker desktop and make sure that you see the server in servers list and little circle doesn't turning green and blue every second. If this happening then it means you did something wrong in config.yml or docker-compose.yml. To open CLI you need to open another Terminal in server folder and past this command(if server running): docker compose exec screeps cli.
 
