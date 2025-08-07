@@ -37,22 +37,14 @@ Like this:
 
 # How to make custom structure
 In index.js you write your code.
-
-First make a function:
 ```js
 module.export = function(config)
 {
-}
-```
-To make our structure and make it visible you need to upload your sprite on internet an then paste url to it in
-```js
-const assetsUrl = 'your file url here';
-//if you uploaded file on hithub the link must be like this https://raw.githubusercontent.com/YourNickname/RepositoryName/refs/heads/main/
-```
-Then paste this cod:
-```js
-config.backend.renderer.resources['your_texture'] = `${assetsUrl}filename.png`;
-config.backend.renderer.metadata['structureName'] = {
+  const assetsUrl = 'your file url here';
+  //To make our structure and make it visible you need to upload your sprite on internet an then paste url to it in
+  //if you uploaded file on hithub the link must be like this https://raw.githubusercontent.com/YourNickname/RepositoryName/refs/heads/main/
+  config.backend.renderer.resources['your_texture'] = `${assetsUrl}filename.png`;
+  config.backend.renderer.metadata['structureName'] = {
     processors: [
         {
             type: 'sprite',
@@ -65,12 +57,11 @@ config.backend.renderer.metadata['structureName'] = {
         }
     ]
 };
-```
-You can also add sidebar info:
-```js
-config.backend.customObjectTypes.structureName = {
+  //You can also add sidebar info
+  config.backend.customObjectTypes.structureName = {
     sidepanel: '<div><label>Description:</label><span>This is description.</span></div>'
-};
+  };
+}
 ```
 Save and launch server an CLI. Don't forget to write a command in CLI system.resetAllData() so you can place your spawn on map.
 
