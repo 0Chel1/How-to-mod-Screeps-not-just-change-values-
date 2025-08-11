@@ -3,7 +3,7 @@ So you want to make a custom structures in Screeps. For that you will need to se
 # Setting up private server
 Install [Jomik's](https://github.com/Jomik/screeps-server) server. Then install [Docker desktop](https://docs.docker.com/desktop/setup/install/windows-install).
 
-To start the server launch Docker desktop. In server folder right click and open the Terminal. Past this command: docker compose up -d. To make sure server is running open Docker desktop and make sure that you see the server in servers list and little circle doesn't turning green and blue every second. If this happening then it means you did something wrong in config.yml or docker-compose.yml. To open CLI you need to open another Terminal in server folder and past this command(if server running): docker compose exec screeps cli.
+To start the server launch Docker desktop. In server folder right click and open the Terminal. Past this command: ```docker compose up -d```. To make sure server is running open Docker desktop and make sure that you see the server in servers list and little circle doesn't turning green and blue every second. If this happening then it means you did something wrong in config.yml or docker-compose.yml. To open CLI you need to open another Terminal in server folder and past this command(if server running): ```docker compose exec screeps cli```.
 
 Now open the game and go in private server section.
 
